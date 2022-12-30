@@ -1,12 +1,13 @@
-gsap.fromTo('.fred', {
-    x: 0,
-    y: 0,
-    opacity: 0
-},{
+gsap.to('.fred', {
     x: 300,
-    y: 200,
-    opacity: 1,
-    scale: 3,
     rotation: 360,
-    duration: 2
+    repeat: -1,
+    yoyo: true,
+    duration: 2,
+})
+gsap.to('.preg', {
+    x: 300,
+    rotation: 360,
+    delay: 2,
+    duration: 2,
 })
