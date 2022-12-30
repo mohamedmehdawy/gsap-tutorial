@@ -2,6 +2,18 @@ body {
     background: #636e72;
 }
 .images {
-    display: grid;
-    gap: 50px;
+    width:1000px;
+    height:410px;
+    border:1px solid #333;
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/space-background.png) no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+}
+.images img {
+    width:122px;
+
 }
