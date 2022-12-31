@@ -1,6 +1,11 @@
 body {
     background: #636e72;
 }
+.app {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
 .images {
     width:1000px;
     height:410px;
@@ -15,5 +20,19 @@ body {
 }
 .images img {
     width:122px;
+}
+.controls {
+    display: flex;
+    gap: 10px;
+}
+.controls button{
+    color: #fff;
+    background: #34495e;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
 
 }
