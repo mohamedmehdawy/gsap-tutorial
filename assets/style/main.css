@@ -1,38 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 body {
     background: #636e72;
+    font-family: 'Righteous', cursive;
 }
-.app {
-    display: grid;
-    justify-items: center;
-    gap: 20px;
-}
-.images {
+#app {
     width:1000px;
     height:410px;
     border:1px solid #333;
     background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/space-background.png) no-repeat;
     background-size: cover;
     background-position: 100% 100%;
+    display: grid;
+    overflow: hidden;
+}
+#app header {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#app header h1 {
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+#app header .time {
+    background-color: #2980b9;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 12px 60px;
+    border-radius: 10px 0 0 10px;
+}
+#app .freds {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 15px;
 }
-.images img {
+.freds img {
     width:122px;
-}
-.controls {
-    display: flex;
-    gap: 10px;
-}
-.controls button{
-    color: #fff;
-    background: #34495e;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 25px;
-    cursor: pointer;
-
 }
